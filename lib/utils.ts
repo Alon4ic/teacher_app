@@ -60,10 +60,8 @@ export const configureAssistant = (
                 },
             ],
         },
-        // @ts-expect-error
-        clientMessages: [],
-        //@ts-expect-error
-        serverMessages: [],
+        clientMessages: undefined, // Изменено с [] на undefined
+        serverMessages: undefined, // Изменено с [] на undefined
     };
     return vapiAssistant;
 };
