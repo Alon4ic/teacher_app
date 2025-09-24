@@ -4,6 +4,7 @@ import React from 'react';
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 import NavItems from './NavItems';
+import ThemeSwitch from './ThemeSwitch';
 
 const Navbar = () => {
     return (
@@ -20,6 +21,7 @@ const Navbar = () => {
             </Link>
             <div className="flex items-center gap-8">
                 <NavItems />
+                <ThemeSwitch />
                 <SignedOut>
                     <SignInButton>
                         <button className="btn-signin">Sign In</button>
